@@ -377,7 +377,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -652,7 +652,7 @@ Transform:
   m_GameObject: {fileID: 847222325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.91, y: -1.62, z: 0}
+  m_LocalPosition: {x: -10.91, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -667,6 +667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1010400168}
+  - component: {fileID: 1010400172}
   - component: {fileID: 1010400171}
   - component: {fileID: 1010400170}
   - component: {fileID: 1010400165}
@@ -726,10 +727,29 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.5}
+    - - {x: 0.28919578, y: 0.47129124}
+      - {x: 0.09482503, y: 0.4725364}
+      - {x: 0.07770276, y: 0.43088984}
+      - {x: -0.20628977, y: 0.3235513}
+      - {x: -0.20119476, y: 0.26615256}
+      - {x: -0.32868195, y: 0.25683683}
+      - {x: -0.31925678, y: 0.062380143}
+      - {x: -0.3221717, y: -0.19143623}
+      - {x: -0.28347492, y: -0.35276282}
+      - {x: -0.1870966, y: -0.34553856}
+      - {x: -0.1793828, y: -0.5130477}
+      - {x: 0.028666973, y: -0.5043305}
+      - {x: 0.28780484, y: -0.517322}
+      - {x: 0.28943324, y: -0.4188222}
+      - {x: 0.19214153, y: -0.42370552}
+      - {x: 0.19874668, y: -0.34757602}
+      - {x: 0.32535124, y: -0.2396051}
+      - {x: 0.32376146, y: -0.12688953}
+      - {x: 0.11208892, y: 0.03958542}
+      - {x: 0.24724793, y: 0.18001404}
+      - {x: 0.20492077, y: 0.3304726}
+      - {x: 0.21150827, y: 0.395352}
+      - {x: 0.28780532, y: 0.40472883}
   m_UseDelaunayMesh: 0
 --- !u!50 &1010400164
 Rigidbody2D:
@@ -802,7 +822,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -5515851078783427038, guid: 8758955146b53a04193ce8639f500b06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -878,6 +898,21 @@ MonoBehaviour:
   projectile: {fileID: 847222325}
   cooldown: 0.3
   projSpeed: 10
+--- !u!114 &1010400172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010400162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6818fd894923d7740932838cc7c15108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accel: 12
+  jumpAmount: 9
+  isTouching: 0
 --- !u!1 &2133074535
 GameObject:
   m_ObjectHideFlags: 0
