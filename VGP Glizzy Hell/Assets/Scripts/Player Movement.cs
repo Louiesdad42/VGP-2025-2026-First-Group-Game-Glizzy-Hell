@@ -4,41 +4,36 @@ using System.Collections.Generic;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    public class PlayerController : MonoBehaviour
+    [Tooltip("Acceleration")]
+    public float accel = 100;
+    private Vector3 inputMovement = Vector3.zero;
+    private Rigidbody2D myRb;
+    private Animator myAnimator;
+    // Start is called before the first frame update
+    void Start()
     {
-        [Tooltip("Acceleration")]
-        public float accel = 100;
+        myRb = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
+    }
+    // FixedUpdate is called once per physics update
+    private void FixedUpdate()
+    {
+        myRb.AddForce(inputMovement.normalized * accel);
+    }
 
-        private Vector3 inputMovement = Vector3.zero;
-        private Rigidbody2D myRb;
-        private Animator myAnimator;
-        // Start is called before the first frame update
-        void Start()
+    // Update is called once per frame
+    void Update()
+    {
+        inputMovement.x = Input.GetAxisRaw("Horizontal");
+        inputMovement.y = Input.GetAxisRaw("Vertical");
+        if (myAnimator != null && inputMovement != Vector3.zero)
         {
-            myRb = GetComponent<Rigidbody2D>();
-            myAnimator = GetComponent<Animator>();
+            myAnimator.SetFloat("X", inputMovement.x);
+            myAnimator.SetFloat("Y", inputMovement.y);
+            myAnimator.SetBool("Moving", true);
         }
-        // FixedUpdate is called once per physics update
-        private void FixedUpdate()
-        {
-            myRb.AddForce(inputMovement.normalized * accel);
-        }
+        else
+            myAnimator.SetBool("Moving", false);
 
-        // Update is called once per frame
-        void Update()
-        {
-            inputMovement.x = Input.GetAxisRaw("Horizontal");
-            inputMovement.y = Input.GetAxisRaw("Vertical");
-            if (myAnimator != null && inputMovement != Vector3.zero)
-            {
-                myAnimator.SetFloat("X", inputMovement.x);
-                myAnimator.SetFloat("Y", inputMovement.y);
-                myAnimator.SetBool("Moving", true);
-            }
-            else
-                myAnimator.SetBool("Moving", false);
-
-        }
     }
 }
