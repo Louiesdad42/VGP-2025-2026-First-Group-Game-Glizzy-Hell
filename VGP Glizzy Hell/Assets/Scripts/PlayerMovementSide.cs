@@ -27,7 +27,8 @@ public class PlayerMovement : MonoBehaviour
         inputMovement.x = Input.GetAxisRaw("Horizontal");
         if (myAnimator != null && inputMovement != Vector3.zero)
         {
-            myAnimator.SetFloat("X", inputMovement.x);
+            //myAnimator.SetFloat("X", inputMovement.x);
+            myAnimator.SetFloat("Move", inputMovement.x);
             myAnimator.SetBool("Moving", true);
         }
         else
