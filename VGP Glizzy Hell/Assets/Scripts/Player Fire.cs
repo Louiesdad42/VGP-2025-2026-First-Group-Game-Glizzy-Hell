@@ -6,6 +6,7 @@ public class PlayerFire : MonoBehaviour
 {
     [Tooltip("Put prefab to be fired here")]
     public GameObject projectile;
+    public GameObject projectile2;
     [Tooltip("The minimum time between firing")]
     public float cooldown = 0.3f;
     private float timer = 0;
@@ -26,6 +27,13 @@ public class PlayerFire : MonoBehaviour
             Fire((mousePos - transform.position).normalized);
             timer = 0;
         }
+        else if (Input.GetMouseButton(1))
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 0;
+            Fire2((mousePos - transform.position).normalized);
+            timer = 0;
+        }
     }
 
     void Fire(Vector3 direction)
@@ -33,6 +41,13 @@ public class PlayerFire : MonoBehaviour
         //create a clone of the prefab and set values
         Vector3 spawnPos = transform.position + direction;
         GameObject clone = Instantiate(projectile, spawnPos, Quaternion.LookRotation(Vector3.forward, direction));
+        clone.GetComponent<Rigidbody2D>().velocity = direction * projSpeed;
+    }
+    void Fire2(Vector3 direction)
+    {
+        //create a clone of the prefab and set values
+        Vector3 spawnPos = transform.position + direction;
+        GameObject clone = Instantiate(projectile2, spawnPos, Quaternion.LookRotation(Vector3.forward, direction));
         clone.GetComponent<Rigidbody2D>().velocity = direction * projSpeed;
     }
 }
