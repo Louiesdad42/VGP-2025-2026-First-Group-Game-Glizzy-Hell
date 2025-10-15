@@ -202,11 +202,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &314483187 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3062512707338976693, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
-  m_PrefabInstance: {fileID: 6213344914299946304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &710639547
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,7 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f730c21db77984418cb24bb80bb5fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 314483187}
+  Target: {fileID: 1446569445}
   interpolationVal: 0.5
 --- !u!4 &928113043
 Transform:
@@ -521,7 +516,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &6213344914299946304
+--- !u!1001 &1436248443
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -529,59 +524,60 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1136004277950042421, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3062512707338976693, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
-      propertyPath: m_Name
-      value: GlizzyMan
-      objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.07
+      value: -3.45
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6832236439756675656, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+    - target: {fileID: 990983359750251437, guid: aea8645835f937344802c7ed166ef673, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8528719899919177270, guid: aea8645835f937344802c7ed166ef673, type: 3}
+      propertyPath: m_Name
+      value: GlizzyMan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5c6ce59b9b396e34790ce430343ec32c, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: aea8645835f937344802c7ed166ef673, type: 3}
+--- !u!1 &1446569445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8528719899919177270, guid: aea8645835f937344802c7ed166ef673, type: 3}
+  m_PrefabInstance: {fileID: 1436248443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8720219005378558141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -644,7 +640,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 710639551}
-  - {fileID: 6213344914299946304}
   - {fileID: 290373442}
   - {fileID: 928113043}
   - {fileID: 8720219005378558141}
+  - {fileID: 1436248443}
