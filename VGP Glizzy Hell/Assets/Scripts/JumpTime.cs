@@ -11,6 +11,8 @@ public class JumpTime : MonoBehaviour
     private Animator myAnimator;
     public float jumpAmount = 10;
     public bool isTouching = false;
+    public float cooldown = 1f;
+    public float timer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,16 +28,21 @@ public class JumpTime : MonoBehaviour
     {
         isTouching = true;
     }
-    public void OnCollisionExit2D(Collision2D collision)
-    {
-        isTouching = false;
-    }
     // Update is called once per frame
     void Update()
     {
+        if (timer >= cooldown)
+        {
+            isTouching = false;
+            timer = 0;
+        }
         if (Input.GetKeyDown(KeyCode.Space) && isTouching == true)
         {
             myRb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
-        } 
+            if (timer < cooldown)
+            {
+                timer += 1.1f;
+            }
+        }
     }
 }
