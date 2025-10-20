@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1846792431750025796}
   m_Layer: 0
   m_Name: Mustard
-  m_TagString: Untagged
+  m_TagString: Condiment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
