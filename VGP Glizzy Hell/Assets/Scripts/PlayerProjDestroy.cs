@@ -8,5 +8,10 @@ public class PlayerProjDestroy : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 }
