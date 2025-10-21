@@ -1,3 +1,14 @@
+/************************************
+ * File name: PlayerMovementSide.cs
+ * Author: Michael Chiodo
+ * Digipen email: michael.chiodo@digipen.edu
+ * Course: VGP
+ *
+ * Description: If either of the side keys
+ * are being pressed, move the player in 
+ * that direction.
+ ************************************/
+
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //getting components for later
         myRb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
     }
@@ -24,10 +36,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //take the input of the player and turn it into movements
         inputMovement.x = Input.GetAxisRaw("Horizontal");
         if (myAnimator != null && inputMovement != Vector3.zero)
         {
-            //myAnimator.SetFloat("X", inputMovement.x);
             myAnimator.SetFloat("Move", inputMovement.x);
             myAnimator.SetBool("Moving", true);
         }

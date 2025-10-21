@@ -1,3 +1,14 @@
+/************************************
+ * File name: CameraFollow.cs
+ * Author: Michael Chiodo
+ * Digipen email: michael.chiodo@digipen.edu
+ * Course: VGP
+ *
+ * Description: Allows the camer to follow
+ * the player and allows the player to shake
+ * the screen by pressing e
+ ************************************/
+
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -33,6 +44,7 @@ public class CameraFollow : MonoBehaviour
             newPos.x = Target.transform.position.x;
             newPos.y = Target.transform.position.y;
         }
+        //transforming the position of the camera to the player
         transform.position = Vector3.Lerp(transform.position, newPos, interpolationVal);
         if (ShakeDuration > 0)
         {
