@@ -1,3 +1,16 @@
+/************************************
+ * File name: EnemyCollision.cs
+ * Author: Michael Chiodo
+ * Digipen email: michael.chiodo@digipen.edu
+ * Course: VGP
+ *
+ * Description: On collision with the enemy,
+ * subtract 1 from the health value of the health
+ * controller script and additionally make sure you
+ * are not colliding multiple times at once with the 
+ * has collided variable
+ ************************************/
+
 using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour

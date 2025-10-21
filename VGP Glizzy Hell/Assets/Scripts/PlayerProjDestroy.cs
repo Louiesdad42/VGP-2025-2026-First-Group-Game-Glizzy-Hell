@@ -1,3 +1,14 @@
+/************************************
+ * File name: PlayerProjDestroy.cs
+ * Author: Michael Chiodo
+ * Digipen email: michael.chiodo@digipen.edu
+ * Course: VGP
+ *
+ * Description: Destroys the player projectile
+ * when it contacts with either a wall or an enemy.
+ * If it is an enemy, also delete the enemy.
+ ************************************/
+
 using UnityEngine;
 
 public class PlayerProjDestroy : MonoBehaviour
