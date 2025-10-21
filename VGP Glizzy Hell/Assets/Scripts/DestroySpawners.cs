@@ -1,7 +1,7 @@
 /*
  * File Name: DestroySpawners
  * Author: Neha Sankarkumar
- * Course: VGP
+ * Course: GAM100
  * 
  * Desc: This script destroys spawners upon collission with player fire.
  */

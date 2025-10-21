@@ -2,7 +2,7 @@
  * File name: DestroyBadProjectile.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: On collision with anything,
  * the enemy projectile is destroyed.

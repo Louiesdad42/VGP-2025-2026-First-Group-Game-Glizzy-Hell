@@ -2,7 +2,7 @@
  * File name: PlayerFire.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: When either the left or right
  * mouse button is clicked, a projectile is fired.

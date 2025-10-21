@@ -2,7 +2,7 @@
  * File name: PlayerMovementSide.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: If either of the side keys
  * are being pressed, move the player in 

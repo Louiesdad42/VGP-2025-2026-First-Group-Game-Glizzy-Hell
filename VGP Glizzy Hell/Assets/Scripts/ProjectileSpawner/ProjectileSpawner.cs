@@ -1,3 +1,14 @@
+/************************************
+ * File name: ProjectileSpawner.cs
+ * Author: Zach Stout
+ * Digipen email: zachary.stout@digipen.edu
+ * Course: GAM100
+ *
+ * Description: Spawns projectiles out of the 
+ * entity that it is attached to in a consistent
+ * direction
+ ************************************/
+
 using UnityEngine;
 
 public class ProjectileSpawner : MonoBehaviour
@@ -17,6 +28,7 @@ public class ProjectileSpawner : MonoBehaviour
             DeltaTracker += Time.deltaTime;
             if (DeltaTracker >= SecondsBetweenSpawns)
             {
+                //setting timer to 0, making projectile, and setting velocity of projectile
                 DeltaTracker = 0.0f;
                 Rigidbody2D clone = Instantiate(Projectile, transform);
                 clone.velocity = new Vector2(XSpeed, YSpeed);

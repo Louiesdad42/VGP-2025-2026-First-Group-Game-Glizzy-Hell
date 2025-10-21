@@ -2,7 +2,7 @@
  * File name: PlayerProjDestroy.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: Destroys the player projectile
  * when it contacts with either a wall or an enemy.

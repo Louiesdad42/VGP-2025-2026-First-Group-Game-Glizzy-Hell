@@ -2,7 +2,7 @@
  * File name: EnemyCollision.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: On collision with the enemy,
  * subtract 1 from the health value of the health

@@ -2,7 +2,7 @@
  * File name: CameraFollow.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: Allows the camer to follow
  * the player and allows the player to shake

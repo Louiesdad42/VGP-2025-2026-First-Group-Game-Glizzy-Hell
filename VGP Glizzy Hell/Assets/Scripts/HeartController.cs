@@ -2,7 +2,7 @@
  * File name: HeartController.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: Sets the different cases for
  * health, with each case having a different amount

@@ -1,3 +1,14 @@
+/************************************
+ * File name: MissionFlag.cs
+ * Author: Zach Stout
+ * Digipen email: zachary.stout@digipen.edu
+ * Course: GAM100
+ *
+ * Description: If the player collides with
+ * this object, set the win screen on and 
+ * stop the games time
+ ************************************/
+
 using UnityEngine;
 
 public class MissionFlag : MonoBehaviour

@@ -2,7 +2,7 @@
  * File name: JumpTime.cs
  * Author: Michael Chiodo
  * Digipen email: michael.chiodo@digipen.edu
- * Course: VGP
+ * Course: GAM100
  *
  * Description: When the space bar is pressed
  * the player will gain y velocity determined

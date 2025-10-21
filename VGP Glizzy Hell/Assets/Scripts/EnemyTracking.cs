@@ -1,7 +1,7 @@
 /*
  * File Name: EnemyTracking
  * Author: Neha Sankarkumar
- * Course: VGP
+ * Course: GAM100
  * 
  * Desc: This script makes the roaming enemies chase the player, 
  * and orients them left or right.
