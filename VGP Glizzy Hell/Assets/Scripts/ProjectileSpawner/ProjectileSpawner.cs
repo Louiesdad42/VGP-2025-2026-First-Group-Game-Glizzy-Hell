@@ -11,7 +11,7 @@ public class ProjectileSpawner : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   // checks that the spawner even exists before continuing functions
         if (spawnerMonster)
         {
             DeltaTracker += Time.deltaTime;

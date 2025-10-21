@@ -1,3 +1,8 @@
+/*
+ * Name: Neha Sankarkumar
+ * Date: 10/21/25
+ * Desc: This script destroys spawners upon collission with player fire.
+ */
 using UnityEngine;
 
 public class DestroySpawners : MonoBehaviour

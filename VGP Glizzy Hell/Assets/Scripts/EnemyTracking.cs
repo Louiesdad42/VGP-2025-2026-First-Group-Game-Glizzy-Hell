@@ -1,3 +1,8 @@
+/*
+ * Name: Neha Sankarkumar
+ * Date: 10/21/25
+ * Desc: This script makes the roaming enemies chase the player, and orients them left or right.
+ */
 using UnityEngine;
 
 public class EnemyTracking : MonoBehaviour
